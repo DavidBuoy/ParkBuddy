@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- I think this is the link to the Bulma Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- our style sheet -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+
+    <title>ParkBuddy</title>
+</head>
+
+<body>
+    <!-- HERO IMAGE -->
+    <section class="hero is-primary is-medium">
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body hero-img">
+            <h1 class="hero-title">ParkBuddy</h1>
+            <button id="startFindLocalPark" class="button">Find a park in your area!</button>
+        </div>
+        </div>
+    </section>
+
+    <!-- CONTENT BLOCK -->
+    <!-- this is all below the hero block should display results of park search -->
+    <div class="show">
+        <div class="section is-small">
+            <h2 id="show-park" class="subtitle">Select a park from the list below!
+            </h2>
+            <div id="park-list" class="pointer"></div>
+        </div>
+        <div><p id="park-name"></p></div>
+        <div class="columns">
+            <div class="column">
+                <article class="message is-small">
+                    <div class="message-header">
+                        <h3>Park Info</h3>
+                    </div>
+                    <div class="message-body">
+
+                        <h5>About the park</h5>
+                        <p id="park-info"></p>
+                        <br>
+                        <h5>Whats the weather like?</h5>
+                        <p id="park-weather-info"></p>
+                        <br>
+                        <h5>Entrance Fee for Park:</h5>
+                        <span>$ <span id="park-fee"></span> </span>- <span id="park-fee-info"></span>
+                    </div>
+                </article>
+            </div>
+            <div class="column">
+                <article class="message is-small">
+                    <div class="message-header">
+                        <h3>Activities</h3>
+                    </div>
+                    <div class="message-body">
+                        <p id="park-activities"></p>
+                    </div>
+                </article>
+            </div>
+            <div class="column">
+                <article class="message is-small">
+                    <div class="message-header">
+                        <h3>Park Image</h3>
+                    </div>
+                    <div class="message-body">
+                        <img id="park-image" src="" alt="Image of the Park" height="300px" width="auto">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <section class="hero is-small is-secondary">
+        <div class="hero-body random-park-img">
+            <p class="title random-park-title">
+                Explore our Nation Parks!
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>&copy; Caitlin Murphy, David Bushard, Drissa Bagate, Bryan Lara </strong>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Scripts Go Here -->
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?keyAIzaSyA_hZqWHClBzWa05VtjZvkHB33MK09sDb4=&libraries=places
+  async defer></script>
+</body>
+
+</html>
